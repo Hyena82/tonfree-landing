@@ -1,0 +1,42 @@
+{
+  "name": "fish-war",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@ant-design/nextjs-registry": "^1.0.1",
+    "@react-three/drei": "^9.115.0",
+    "@react-three/fiber": "^8.17.10",
+    "@types/three": "^0.169.0",
+    "antd": "^5.20.0",
+    "framer-motion": "^11.3.24",
+    "framer-motion-3d": "^11.11.11",
+    "lenis": "^1.1.9",
+    "next": "14.2.3",
+    "react": "^18",
+    "react-countup": "^6.5.3",
+    "react-dom": "^18",
+    "react-slick": "^0.30.2",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^6.1.11",
+    "styled-system": "^5.1.5",
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/react-slick": "^0.23.13",
+    "@types/styled-system": "^5.1.22",
+    "babel-plugin-styled-components": "^2.1.4",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3",
+    "typescript": "^5"
+  },
+  "license": "MIT"
+}
