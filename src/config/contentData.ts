@@ -3,20 +3,20 @@
 export const earningPageData = [
   {
     title: "Simple and Easy!",
-    bg: "/images/earning/card-1.png",
+    bg: "/images/earning/card-1.webp",
     description:
       "Begin mining TonFree tokens with only 1 TON. It's simple and direct!",
   },
   {
     title: "Clear and Equitable",
     description: "Earn money by playing games and completing tasks.",
-    bg: "/images/earning/card-2.png",
+    bg: "/images/earning/card-2.webp",
   },
   {
     title: "Safe and Decentralized",
     description:
       "Leveraging Open Network (TON) technology, your transactions and earnings are secure.",
-    bg: "/images/earning/card-3.png",
+    bg: "/images/earning/card-3.webp",
   },
 ];
 

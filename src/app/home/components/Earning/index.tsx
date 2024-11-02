@@ -140,8 +140,8 @@ const EarningPage = () => {
         </div>
       </div>
 
-      <img className="moon bounce" src="/images/earning/moon.png" alt="" />
-      <img className="heart bounce" src="/images/earning/heart.png" alt="" />
+      <img className="moon bounce" src="/images/earning/moon.webp" alt="" />
+      <img className="heart bounce" src="/images/earning/heart.webp" alt="" />
     </Wrapper>
   );
 };

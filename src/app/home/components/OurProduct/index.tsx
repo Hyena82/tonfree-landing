@@ -119,7 +119,7 @@ const Wrapper = styled.div`
         padding: 33px 25px;
         height: 100%;
         flex-shrink: 0;
-        background: url("/images/product/item-1.png") no-repeat center center;
+        background: url("/images/product/item-1.webp") no-repeat center center;
 
         @media (max-width: 768px) {
           flex-direction: column;
@@ -146,10 +146,10 @@ const Wrapper = styled.div`
         width: 542px;
         padding: 33px 25px;
         flex: 1;
-        background: url("/images/product/item-2.png") no-repeat center center;
+        background: url("/images/product/item-2.webp") no-repeat center center;
 
         &:nth-child(2) {
-          background: url("/images/product/item-3.png") no-repeat center center;
+          background: url("/images/product/item-3.webp") no-repeat center center;
           @media (max-width: 768px) {
             background-size: contain;
           }
@@ -222,12 +222,12 @@ const OurProductPage = () => {
             </div>
           </div>
           <div className="right-content">
-            <img className="bounce" src="/images/product/phone.png" alt="" />
+            <img className="bounce" src="/images/product/phone.webp" alt="" />
           </div>
         </div>
       </div>
 
-      <img className="planet" src="/images/product/planet.png" alt="" />
+      <img className="planet" src="/images/product/planet.webp" alt="" />
     </Wrapper>
   );
 };

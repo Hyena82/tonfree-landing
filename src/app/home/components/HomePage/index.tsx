@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   z-index: 3;
   min-height: 100vh;
   padding-top: 6rem;
-  background: url("/images/home/bg.png") no-repeat center center;
+  background: url("/images/home/bg.webp") no-repeat center center;
   background-size: cover;
 
   @media (max-width: 768px) {

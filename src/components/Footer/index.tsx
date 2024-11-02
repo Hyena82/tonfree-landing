@@ -8,7 +8,7 @@ const FooterWrapper = styled.footer`
   background: transparent;
   position: relative;
   overflow: hidden;
-  background: url("/images/footer/bg.png") no-repeat center center / cover;
+  background: url("/images/footer/bg.webp") no-repeat center center / cover;
   font-family: var(--font-inter);
   color: #fff;
   display: flex;
