@@ -1,3 +1,4 @@
+import { partnersData } from "@/config";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
@@ -65,17 +66,6 @@ const Wrapper = styled.div`
 `;
 
 const BackerPage = () => {
-  const partnersData = [
-    { role: "Backer", name: "CAPTCHA", highlighted: true },
-    { role: "Backer", name: "BINANCECHAIN" },
-    { role: "Backer", name: "ROCKDAO" },
-    { role: "Backer", name: "QAPPMINERBOT" },
-    { role: "Backer", name: "BULL_MASCOT" },
-    { role: "Backer", name: "HELA LABS" },
-    { role: "Backer", name: "BEEVERSE BOT" },
-    { role: "Backer", name: "ELLIPSE" },
-  ];
-
   return (
     <Wrapper>
       <div className="container">

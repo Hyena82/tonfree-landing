@@ -1,4 +1,5 @@
 import AnimatedInview from "@/components/AnimatedInview.tsx";
+import { roadmapData } from "@/config";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
@@ -162,29 +163,6 @@ const Wrapper = styled.div`
 `;
 
 const RoadmapPage = () => {
-  const roadmapData = [
-    {
-      phase: "Phase 1",
-      title: "System Foundation",
-      status: "Completed",
-    },
-    {
-      phase: "Phase 2",
-      title: "NFT & Staking Integration",
-      status: "In Progress",
-    },
-    {
-      phase: "Phase 3",
-      title: "NFT Gaming & Enhanced Features",
-      status: "In Progress",
-    },
-    {
-      phase: "Phase 4",
-      title: "Exchange Listings & Market Expansion",
-      status: "Planned",
-    },
-  ];
-
   return (
     <Wrapper>
       <div className="container">

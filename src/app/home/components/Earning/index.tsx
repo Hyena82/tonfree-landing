@@ -1,4 +1,5 @@
 import AnimatedInview from "@/components/AnimatedInview.tsx";
+import { earningPageData } from "@/config";
 import { Col, Row } from "antd";
 import styled from "styled-components";
 
@@ -108,26 +109,6 @@ const CardWrapper = styled.div<{ bg: string; isSecond: boolean }>`
 `;
 
 const EarningPage = () => {
-  const data = [
-    {
-      title: "Simple and Easy!",
-      bg: "/images/earning/card-1.png",
-      description:
-        "Begin mining TonFree tokens with only 1 TON. It's simple and direct!",
-    },
-    {
-      title: "Clear and Equitable",
-      description: "Earn money by playing games and completing tasks.",
-      bg: "/images/earning/card-2.png",
-    },
-    {
-      title: "Safe and Decentralized",
-      description:
-        "Leveraging Open Network (TON) technology, your transactions and earnings are secure.",
-      bg: "/images/earning/card-3.png",
-    },
-  ];
-
   return (
     <Wrapper id="earning">
       <div className="container">
@@ -143,7 +124,7 @@ const EarningPage = () => {
         </div>
 
         <Row gutter={[20, 20]} className="list-data">
-          {data.map((item, index) => (
+          {earningPageData.map((item, index) => (
             <Col xs={24} sm={8} key={index}>
               <CardWrapper bg={item.bg} isSecond={index === 1}>
                 <p className="title">{item.title}</p>

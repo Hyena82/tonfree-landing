@@ -22,8 +22,6 @@ const Wrapper = styled.div`
 `;
 
 const LoadingPage = () => {
-  console.log("~~Loading...");
-
   return (
     <Wrapper>
       <p>Loading...</p>

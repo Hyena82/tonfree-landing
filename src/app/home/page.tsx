@@ -1,4 +1,5 @@
 "use client";
+
 import styled from "styled-components";
 import HomeSection from "./components/HomePage";
 import RoadmapPage from "@/app/home/components/Roadmap";
