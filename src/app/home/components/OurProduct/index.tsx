@@ -188,7 +188,7 @@ const Wrapper = styled.div`
 
 const OurProductPage = () => {
   return (
-    <Wrapper>
+    <Wrapper id="product">
       <div className="container">
         <AnimatedInview duration={0.4}>
           <p className="title-page">

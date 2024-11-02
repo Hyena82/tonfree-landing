@@ -200,7 +200,7 @@ const CopyRight = styled.div`
 const Footer = () => {
   return (
     <FooterWrapper>
-      <div className="container-footer">
+      <div className="container-footer" id="join-us">
         <div className="header-content">
           <h2>Fist Come First Serve</h2>
           <p>Do you want to join us?</p>

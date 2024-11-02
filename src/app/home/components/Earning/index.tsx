@@ -129,7 +129,7 @@ const EarningPage = () => {
   ];
 
   return (
-    <Wrapper>
+    <Wrapper id="earning">
       <div className="container">
         <AnimatedInview duration={0.4}>
           <p className="title-page">

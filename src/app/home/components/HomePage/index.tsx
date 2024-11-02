@@ -156,7 +156,7 @@ const LaunchButton = styled(motion.div)`
 
 const HomePage = () => {
   return (
-    <Wrapper>
+    <Wrapper id="home">
       <div className="container">
         <Row>
           <Col xs={24} sm={12}>

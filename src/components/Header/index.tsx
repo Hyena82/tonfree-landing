@@ -13,6 +13,7 @@ const Wrapper = styled.div<{ isShow: boolean }>`
   display: flex;
   align-items: center;
   font-family: var(--font-inter);
+  backdrop-filter: blur(10px);
 
   position: fixed;
   top: 0;
@@ -30,6 +31,7 @@ const Wrapper = styled.div<{ isShow: boolean }>`
     padding: 0 20px;
     display: flex;
     align-items: center;
+    height: 80px;
   }
 
   .header-menu {
@@ -39,7 +41,12 @@ const Wrapper = styled.div<{ isShow: boolean }>`
     }
   }
 
-  backdrop-filter: blur(10px);
+  .logo-header {
+    width: 81px;
+    @media (max-width: 768px) {
+      width: 60px;
+    }
+  }
 `;
 
 const MenuWrapper = styled.div`
@@ -157,7 +164,12 @@ const Header = () => {
 
       <div className="container h-100 flex justify-between align-center">
         <Link href="/">
-          <img src="/images/logo.svg" width={81} alt="" />
+          <img
+            className="logo-header"
+            src="/images/logo.svg"
+            width={81}
+            alt=""
+          />
         </Link>
 
         <MenuWrapper>
