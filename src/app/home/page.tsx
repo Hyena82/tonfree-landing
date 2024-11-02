@@ -16,9 +16,13 @@ const HomePage = () => {
   return (
     <Wrapper>
       <HomeSection />
+
       <EaringPage />
+
       <OurProductPage />
+
       <RoadmapPage />
+
       <BackerPage />
     </Wrapper>
   );
