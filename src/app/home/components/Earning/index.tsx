@@ -8,6 +8,10 @@ const Wrapper = styled.div`
   background-size: 140% 140%;
   position: relative;
 
+  @media (max-width: 768px) {
+    padding: 6rem 0 1rem;
+  }
+
   .description {
     color: rgba(255, 255, 255, 0.7);
     text-align: center;
@@ -17,7 +21,11 @@ const Wrapper = styled.div`
     font-size: 32px;
     font-style: normal;
     font-weight: 300;
-    line-height: 45px; /* 140.625% */
+    line-height: 45px;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   .list-data {
@@ -28,12 +36,39 @@ const Wrapper = styled.div`
     position: absolute;
     top: 5%;
     left: 4%;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   .heart {
     position: absolute;
     bottom: 5%;
     right: 5%;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .m-description {
+    display: none;
+
+    @media (max-width: 768px) {
+      display: block;
+      color: rgba(255, 255, 255, 0.7);
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-family: var(--font-poppins);
+
+      color: rgba(255, 255, 255, 0.7);
+      text-align: center;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 23px; /* 143.75% */
+    }
   }
 `;
 
@@ -102,9 +137,14 @@ const EarningPage = () => {
           </p>
         </AnimatedInview>
 
+        <div className="m-description">
+          Tonfree was created with the mission to bring financial freedom to
+          everyone through the decentralized TON platform
+        </div>
+
         <Row gutter={[20, 20]} className="list-data">
           {data.map((item, index) => (
-            <Col span={8} key={index}>
+            <Col xs={24} sm={8} key={index}>
               <CardWrapper bg={item.bg} isSecond={index === 1}>
                 <p className="title">{item.title}</p>
                 <p className="desc">{item.description}</p>

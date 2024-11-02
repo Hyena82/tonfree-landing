@@ -73,6 +73,16 @@ const Wrapper = styled.div`
     display: flex;
     gap: 10px;
     justify-content: center;
+
+    @media (max-width: 768px) {
+      gap: 20px;
+
+      .social-item {
+        img {
+          width: 30px;
+        }
+      }
+    }
   }
 `;
 
@@ -124,7 +134,7 @@ const MobileMenu = ({ onClose }: any) => {
               </Link>
             ))}
 
-            <div className="mt-4">
+            {/* <div className="mt-4">
               <Link
                 href="https://whitepaper.grabway.site/"
                 target="_blank"
@@ -132,7 +142,7 @@ const MobileMenu = ({ onClose }: any) => {
               >
                 <JoinButton>White Paper</JoinButton>
               </Link>
-            </div>
+            </div> */}
 
             <div className="line-slider" />
           </div>

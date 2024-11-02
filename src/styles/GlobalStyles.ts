@@ -98,8 +98,9 @@ const GlobalStyles = createGlobalStyle`
     }
 
     @media (max-width: 768px) {
+      margin: 0  0 2rem;
       text-align: center;
-      font-size: 40px;
+      font-size: 50px;
       line-height: 48px;
     }
   }

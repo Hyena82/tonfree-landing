@@ -184,16 +184,12 @@ const Header = () => {
           <Link href="#" target="_blank" rel="noopener noreferrer">
             <JoinButton className="center button-hover">PlayNow</JoinButton>
           </Link> */}
-            <div className="header-menu center" onClick={showDrawer}>
-              <Image
-                src="/images/icons/menu.svg"
-                width={32}
-                height={32}
-                alt=""
-              />
-            </div>
           </div>
         </MenuWrapper>
+
+        <div className="header-menu center" onClick={showDrawer}>
+          <Image src="/images/icons/menu.svg" width={32} height={32} alt="" />
+        </div>
       </div>
     </Wrapper>
   );

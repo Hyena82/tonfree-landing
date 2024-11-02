@@ -16,9 +16,7 @@ const Wrapper = styled.div`
   background-size: cover;
 
   @media (max-width: 768px) {
-    height: 700px;
-    background-position: 25% 0;
-    background-size: auto 630px;
+    padding-top: 8rem;
   }
 
   .left-content {
@@ -29,6 +27,11 @@ const Wrapper = styled.div`
       font-style: normal;
       line-height: 128.472px;
       text-transform: uppercase;
+
+      @media (max-width: 768px) {
+        font-size: 74px;
+        line-height: 64px;
+      }
     }
 
     .desc {
@@ -42,6 +45,12 @@ const Wrapper = styled.div`
       margin: 6rem 0 4rem;
       position: relative;
 
+      @media (max-width: 768px) {
+        font-size: 20px;
+        line-height: 24px;
+        margin: 3rem 0 2rem;
+      }
+
       &::before {
         position: absolute;
         content: "";
@@ -53,16 +62,39 @@ const Wrapper = styled.div`
         height: 10px;
       }
     }
+
+    @media (max-width: 768px) {
+      .action-button {
+        display: none;
+      }
+    }
   }
 
   .right-content {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+
+    @media (max-width: 768px) {
+      align-items: center;
+    }
+
     .robot-box {
       width: 450px;
       height: 540px;
-      /* border: 1px solid #fff; */
+
+      @media (max-width: 768px) {
+        width: 100%;
+        height: 500px;
+        max-width: 450px;
+      }
+    }
+
+    .action-button {
+      display: none;
+      @media (max-width: 768px) {
+        display: flex;
+      }
     }
 
     p {
@@ -73,6 +105,11 @@ const Wrapper = styled.div`
       line-height: 128.472px;
       text-transform: uppercase;
       margin-top: 2rem;
+
+      @media (max-width: 768px) {
+        font-size: 74px;
+        line-height: 64px;
+      }
     }
   }
 `;
@@ -103,6 +140,11 @@ const LaunchButton = styled(motion.div)`
   text-transform: uppercase;
   cursor: pointer;
 
+  @media (max-width: 768px) {
+    font-size: 24px;
+    padding: 10px 20px;
+  }
+
   img {
     transition: transform 0.3s ease-in-out;
   }
@@ -117,24 +159,35 @@ const HomePage = () => {
     <Wrapper>
       <div className="container">
         <Row>
-          <Col sm={12}>
+          <Col xs={24} sm={12}>
             <div className="left-content">
               <p>TONFREE</p>
               <div className="desc">
                 Emphasizes a commitment to freedom and equality for all users
               </div>
 
-              <LaunchButton whileHover={{ scale: 1.1 }}>
+              <LaunchButton
+                className="action-button"
+                whileHover={{ scale: 1.1 }}
+              >
                 Launch App
                 <img src="/images/icons/rocket.svg" alt="" />
               </LaunchButton>
             </div>
           </Col>
-          <Col sm={12}>
+          <Col xs={24} sm={12}>
             <div className="right-content">
               <div className="robot-box relative">
                 <RoBotModelBox />
               </div>
+
+              <LaunchButton
+                className="action-button"
+                whileHover={{ scale: 1.1 }}
+              >
+                Launch App
+                <img src="/images/icons/rocket.svg" alt="" />
+              </LaunchButton>
               <p>all free</p>
             </div>
           </Col>

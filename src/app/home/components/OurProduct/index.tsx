@@ -5,8 +5,20 @@ const Wrapper = styled.div`
   padding: 6rem 0 12rem;
   position: relative;
 
+  @media (max-width: 768px) {
+    padding: 6rem 0 6rem;
+  }
+
   .title-page {
     font-size: 128.772px;
+
+    @media (max-width: 768px) {
+      font-size: 62.793px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 62.793px;
+      text-transform: uppercase;
+    }
   }
 
   @keyframes bounceRightBottom {
@@ -28,8 +40,11 @@ const Wrapper = styled.div`
     position: absolute;
     bottom: 5%;
     right: 0;
-
     animation: bounceRightBottom 9s infinite;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   .description {
@@ -48,6 +63,11 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
     .title-card {
       color: #36ef99;
       font-family: var(--font-inter);
@@ -72,6 +92,11 @@ const Wrapper = styled.div`
       font-weight: 400;
       line-height: 24px;
       max-width: 302px;
+
+      @media (max-width: 768px) {
+        font-size: 14px;
+        line-height: 20px;
+      }
     }
 
     .left-content {
@@ -79,6 +104,12 @@ const Wrapper = styled.div`
       align-items: center;
       height: 505px;
       gap: 20px;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+      }
 
       .yCard {
         display: flex;
@@ -89,6 +120,11 @@ const Wrapper = styled.div`
         height: 100%;
         flex-shrink: 0;
         background: url("/images/product/item-1.png") no-repeat center center;
+
+        @media (max-width: 768px) {
+          flex-direction: column;
+          height: 505px;
+        }
       }
 
       .right-stack {
@@ -97,6 +133,10 @@ const Wrapper = styled.div`
         height: 100%;
 
         flex-direction: column;
+
+        @media (max-width: 768px) {
+          flex: unset;
+        }
       }
 
       .XCard {
@@ -107,6 +147,22 @@ const Wrapper = styled.div`
         padding: 33px 25px;
         flex: 1;
         background: url("/images/product/item-2.png") no-repeat center center;
+
+        &:nth-child(2) {
+          background: url("/images/product/item-3.png") no-repeat center center;
+          @media (max-width: 768px) {
+            background-size: contain;
+          }
+        }
+
+        @media (max-width: 768px) {
+          width: 100%;
+          height: 170px;
+          background-size: contain;
+          font-size: 20px;
+          padding: 20px 25px;
+          flex: unset;
+        }
       }
     }
 
@@ -116,6 +172,11 @@ const Wrapper = styled.div`
       justify-content: center;
       align-items: center;
       position: relative;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
+
       img {
         position: absolute;
         left: -30%;
@@ -166,7 +227,7 @@ const OurProductPage = () => {
         </div>
       </div>
 
-      <img className="planet " src="/images/product/planet.png" alt="" />
+      <img className="planet" src="/images/product/planet.png" alt="" />
     </Wrapper>
   );
 };

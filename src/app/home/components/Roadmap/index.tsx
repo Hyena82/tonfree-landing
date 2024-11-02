@@ -8,6 +8,7 @@ const Wrapper = styled.div`
   .map-content {
     position: relative;
     height: 700px;
+    overflow-x: auto;
   }
 
   .title-page {
@@ -18,8 +19,12 @@ const Wrapper = styled.div`
     font-size: 80px;
     font-style: normal;
     font-weight: 400;
-    line-height: 90px; /* 112.5% */
+    line-height: 90px;
     text-transform: uppercase;
+
+    @media (max-width: 768px) {
+      font-size: 50px;
+    }
   }
 
   .time-line {
@@ -28,6 +33,9 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
+    position: relative;
+
+    min-width: 1058px;
     img {
       width: 100%;
     }
@@ -69,6 +77,12 @@ const Wrapper = styled.div`
     border-radius: 20px;
     background: #01030e;
     border: 1px solid rgba(128, 128, 128, 0.55);
+
+    @media (max-width: 768px) {
+      width: 280px;
+      padding: 20px;
+    }
+
     &.in-active {
       img {
         filter: grayscale(100%);
@@ -95,6 +109,10 @@ const Wrapper = styled.div`
       text-transform: uppercase;
       position: relative;
       padding-left: 25px;
+
+      @media (max-width: 768px) {
+        font-size: 18px;
+      }
 
       &::before {
         content: "";
@@ -136,6 +154,10 @@ const Wrapper = styled.div`
     left: 40px;
 
     animation: bounceLeftBottom 16s infinite;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 `;
 

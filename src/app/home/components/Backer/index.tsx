@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   margin-top: 100px;
+  padding-bottom: 20px;
 
   p {
     color: rgba(255, 255, 255, 0.7);
@@ -40,6 +41,10 @@ const Wrapper = styled.div`
       font-style: normal;
       font-weight: 300;
       line-height: 45px;
+      @media (max-width: 768px) {
+        font-size: 16px;
+        line-height: 30px;
+      }
     }
 
     .name {
@@ -50,6 +55,11 @@ const Wrapper = styled.div`
       font-weight: 400;
       text-transform: uppercase;
       line-height: 67px;
+
+      @media (max-width: 768px) {
+        font-size: 30px;
+        line-height: 40px;
+      }
     }
   }
 `;

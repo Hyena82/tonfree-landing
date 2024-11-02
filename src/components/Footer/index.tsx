@@ -15,6 +15,10 @@ const FooterWrapper = styled.footer`
   justify-content: flex-end;
   flex-direction: column;
 
+  @media (max-width: 768px) {
+    height: 1128px;
+  }
+
   .container-footer {
     margin: 0 auto -50px;
     padding: 3rem 3rem;
@@ -23,6 +27,10 @@ const FooterWrapper = styled.footer`
     border-radius: 20px;
     background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(5px);
+
+    @media (max-width: 768px) {
+      width: 95%;
+    }
   }
 
   .header-content {
@@ -46,6 +54,11 @@ const FooterWrapper = styled.footer`
       font-style: normal;
       font-weight: 700;
       line-height: 80px; /* 133.333% */
+
+      @media (max-width: 768px) {
+        font-size: 40px;
+        line-height: 48px;
+      }
 
       span {
         color: #36ef99;
@@ -95,6 +108,12 @@ const FooterWrapper = styled.footer`
     justify-content: center;
     align-items: flex-start;
 
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+
     .footer-column {
       h3 {
         background: var(
@@ -111,6 +130,10 @@ const FooterWrapper = styled.footer`
         line-height: normal;
         text-transform: uppercase;
         margin-bottom: 1.5rem;
+      }
+
+      @media (max-width: 768px) {
+        text-align: center;
       }
 
       ul {
@@ -149,6 +172,14 @@ const CopyRight = styled.div`
   display: flex;
   justify-content: center;
   align-items: flex-end;
+
+  @media (max-width: 768px) {
+    height: 180px;
+    & > div {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
 
   font-size: 14px;
   font-style: italic;
