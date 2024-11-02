@@ -1,33 +1,10 @@
-import { Box } from "@/components/Box";
 import { ModelRobot } from "@/components/_3DRobot";
 import { Environment, PerspectiveCamera } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import {
-  useMotionValue,
-  useScroll,
-  useSpring,
-  useTransform,
-  motion,
-} from "framer-motion";
+import { useMotionValue, useSpring } from "framer-motion";
 import { motion as motion3D } from "framer-motion-3d";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import styled from "styled-components";
-
-const Wrapper = styled.div`
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  /* visibility: hidden; */
-
-  .box-view {
-    position: absolute;
-    bottom: 200px;
-    width: 20px;
-    height: 20px;
-  }
-`;
 
 const ModelBox = styled.div`
   width: 100%;

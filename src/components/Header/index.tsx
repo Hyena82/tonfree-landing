@@ -6,7 +6,7 @@ import MobileMenu from "./MobileMenu";
 import { menuHeader } from "@/config";
 import Image from "next/image";
 
-const Wrapper = styled.div<{ isShow: boolean }>`
+const Wrapper = styled.div<{ $isShow: boolean }>`
   padding: 0 20px;
   color: #fff;
   height: 100px;
@@ -149,15 +149,17 @@ const Header = () => {
   };
 
   return (
-    <Wrapper isShow={isHeaderVisible}>
+    <Wrapper $isShow={isHeaderVisible}>
       <Drawer
         width="340px"
         zIndex={1000}
         title=" Drawer"
         onClose={onClose}
         open={open}
-        headerStyle={{ display: "none" }}
-        bodyStyle={{ padding: 0 }}
+        styles={{
+          header: { display: "none" },
+          body: { padding: 0 },
+        }}
       >
         <MobileMenu onClose={onClose} />
       </Drawer>

@@ -73,8 +73,8 @@ const Wrapper = styled.div`
   }
 `;
 
-const CardWrapper = styled.div<{ bg: string; isSecond: boolean }>`
-  background-image: url(${(props) => props.bg});
+const CardWrapper = styled.div<{ $bg: string; $isSecond: boolean }>`
+  background-image: url(${(props) => props.$bg});
   background-size: 100% 100%;
   background-position: center;
   width: 100%;
@@ -99,7 +99,7 @@ const CardWrapper = styled.div<{ bg: string; isSecond: boolean }>`
 
   .desc {
     font-family: var(--font-inter);
-    color: ${(props) => (props.isSecond ? "#000" : "#fff")};
+    color: ${(props) => (props.$isSecond ? "#000" : "#fff")};
     text-align: center;
     font-size: 16px;
     font-style: normal;
@@ -126,7 +126,7 @@ const EarningPage = () => {
         <Row gutter={[20, 20]} className="list-data">
           {earningPageData.map((item, index) => (
             <Col xs={24} sm={8} key={index}>
-              <CardWrapper bg={item.bg} isSecond={index === 1}>
+              <CardWrapper $bg={item.bg} $isSecond={index === 1}>
                 <p className="title">{item.title}</p>
                 <p className="desc">{item.description}</p>
               </CardWrapper>
